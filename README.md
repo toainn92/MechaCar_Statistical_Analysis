@@ -10,6 +10,7 @@ The purpose of this analysis is to review the production data for insights that 
 
 ## Linear Regression to Predict MPG
 - Screenshot of the output from linear regression:
+
 ![](Resources/Linear_Regression_Predict_MPG.PNG)
 
 ### Summary
@@ -71,6 +72,7 @@ When reviewing the total summary dataframe, all three manufacturing lots have a 
 ## Study Design: MechaCar vs Competition
 
 - What metric or metrics are you going to test?
+
 The metric to evaluate between MechaCar and their competition is average speed acceleration.
 
 - What is the null hypothesis or alternative hypothesis?
