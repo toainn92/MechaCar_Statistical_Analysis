@@ -45,16 +45,29 @@ When reviewing the total summary dataframe, all three manufacturing lots have a 
 ## T-Tests on Suspension Coils
 
 -Screenshot of the T Test on all lots:
+
 ![](Resources/Deliverable3_All_Lots.PNG)
 
 -Screenshot of the T Test on Lot 1:
+
 ![](Resources/Deliverable3_Lot1.PNG)
 
 -Screenshot of the T Test on Lot 2:
+
 ![](Resources/Deliverable3_Lot2.PNG)
 
 -Screenshot of the T Test on Lot 3:
+
 ![](Resources/Deliverable3_Lot3.PNG)
 
+
+### Summary of T-test results across all manufacturing and for each lot
+
+- The p-value of all manufacturing lots was 0.06028. This p-value is greater than the significance level of 0.05, which means all manufacturing lots are statistically similar.
+- For Lot 1, the p-value is 1, which is greater than the significance level of 0.05. As a result, the two means are statistically similar.
+- For Lot 2, the p-value is 0.6072, which is greater than the significance level of 0.05. As a result, the two means are statistically similar.
+- For Lot 3, the p-value is 0.04168, which is lower than the significance level of 0.05. As a result, the two means are not statistically similar.
+
+## Study Design: MechaCar vs Competition
 
 
