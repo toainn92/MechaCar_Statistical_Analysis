@@ -70,4 +70,15 @@ When reviewing the total summary dataframe, all three manufacturing lots have a 
 
 ## Study Design: MechaCar vs Competition
 
+- What metric or metrics are you going to test?
+The metric to evaluate between MechaCar and their competition is average speed acceleration.
 
+- What is the null hypothesis or alternative hypothesis?
+The null hypothesis is that there are no significant difference in the average speed acceleration between the MechaCar and their competition
+The alternative hypothesis is that there are significant difference in the average speed acceleration between the MechaCar and their competition
+
+- What statistical test would you use to test the hypothesis? And why?
+The T-test would be use to test the hypothesis. In this analysis, the sample dataset will be compared against the hypothesized, population dataset to determine if there are any statistical difference.
+
+- What data is needed to run the statistical test?
+To run this statistical test, the average speed acceleration data set will need to be obtained.
