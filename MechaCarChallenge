@@ -1,0 +1,20 @@
+#Deliverable 1: Linear Regression to Predict MPG
+library(dplyr)
+mpg_results <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
+View(mpg_results)
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mpg_results)
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mpg_results))
+
+#Deliverable 2: Create Visualizations for the Trip Analysis
+suspension_results<- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+View(suspension_results)
+total_summary <- suspension_results %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups = 'keep')
+View(total_summary)
+lot_summary <- suspension_results %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups = 'keep') 
+View(lot_summary)
+
+#Deliverable 3: T-Tests on Suspension Coils
+t.test(suspension_results$PSI, mu=1500)
+t.test(subset(suspension_results,Manufacturing_Lot=="Lot1")$PSI, mu=1500) #lot 1
+t.test(subset(suspension_results,Manufacturing_Lot=="Lot2")$PSI, mu=1500) #lot 2
+t.test(subset(suspension_results,Manufacturing_Lot=="Lot3")$PSI, mu=1500) #lot 3
